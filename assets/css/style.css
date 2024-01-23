@@ -19,6 +19,10 @@ a {
     color: white;
 }
 
+div {
+    border: 1px solid red;
+}
+
 #container-s1 {
     display: flex;
     justify-content: center;
@@ -27,20 +31,61 @@ a {
     background-color: #011433;
 }
 
-
-#container-s2 {
-
+.card {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 250px;
+    border-radius: 15px;
+    background-color: #000000;
+    margin: 1em;
 }
 
+.card-img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card-img img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    transition: transform .2s;
+}
+
+.zoom img:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.card-text{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+#container-s2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
 #container-s1 #container-s2 {
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(1,20,51,1) 35%, rgba(0,212,255,1) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(1, 20, 51, 1) 35%, rgba(0, 212, 255, 1) 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#container-s2 h2{
+#container-s2 h2 {
     font-size: 35px;
 }
 

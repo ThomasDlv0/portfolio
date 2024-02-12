@@ -16,14 +16,15 @@ body {
     color: white;
 }
 
+h1, p {
+    font-size: clamp(35px, 5vw, 60px);
+}
+
 a {
     text-decoration: none;
     color: white;
 }
 
-div {
-    border: 1px solid red;
-}
 
 .scroll-page {
     height: 100vh;
@@ -33,7 +34,6 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 45px;
     background-color: #011433;
 }
 
@@ -52,11 +52,66 @@ div {
     background-repeat: no-repeat;
 }
 
-
 #container-s3 {
     background: rgb(2, 0, 36);
     background: linear-gradient(180deg, rgb(38, 7, 83) 0%, rgb(38, 7, 83) 0%, rgb(15, 1, 38) 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#container-s4 {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgb(15, 1, 38) 0%, rgb(15, 1, 38) 0%, rgb(6, 6, 6) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.nav-projets {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: min-content;
+}
+
+.nav-projets a {
+    margin: 1em 1em;
+}
+
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+
+.item {
+    display: flex;
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid whitesmoke;
+}
+
+.item:hover {
+    overflow: hidden;
+    filter: grayscale(100%);
 }
